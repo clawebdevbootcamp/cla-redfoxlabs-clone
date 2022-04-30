@@ -6,4 +6,66 @@
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  margin: 0px;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  padding: 0.5rem;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#mobile-menu {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+#logo {
+  margin-right: 8rem;
+}
+
+#links {
+  display: none;
+}
+
+#description {
+  width: 50%;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+
+.header-buttons {
+  width: 30rem;
+  padding: 1rem;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+#get-started {
+  background-color: var(--red);
+  border: solid var(--red);
+  margin-bottom: 1rem;
+}
+
+#learn-more {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/mobileBG.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
