@@ -77,13 +77,14 @@ header {
 }
 
 .main-content {
-  padding-top: 1rem;
+  padding: 1rem;
   background-color: var(--grey);
   display: grid;
   justify-items: center;
 }
 
-.main-content > div {
+.main-content > div,
+.main-content > div > .service {
   display: grid;
   justify-items: center;
   gap: 1rem;
@@ -101,4 +102,49 @@ header {
 .title-2 {
   font-size: 2.5rem;
   font-weight: bold;
+}
+
+.title-3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#discover {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--red);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#contact-us {
+  display: grid;
+  justify-items: center;
+}
+
+form {
+  display: grid;
+  justify-items: stretch;
+  gap: 1rem;
+}
+
+.form-input {
+  padding: 0.5rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+}
+
+.form-input:not(textarea) {
+  height: 1rem;
+}
+
+label > a {
+  color: var(--red);
+  text-decoration: none;
+}
+
+#submit {
+  width: 10rem;
+  justify-self: center;
 }
