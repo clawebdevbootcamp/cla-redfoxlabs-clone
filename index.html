@@ -5,13 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Red Fox Labs clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Amiko&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header></header>
+    <nav>
+      <div id="logo">
+        <img src="assets/logo.png" alt="logo" width="200" />
+      </div>
+      <button id="mobile-menu">
+        <img src="./assets/menu.png" alt="menuIcon" width="20" />
+      </button>
+      <div id="links">
+        <a class="link" href="">About the company</a>
+        <a class="link" href="">Services</a>
+        <a class="link" href="">Contact</a>
+        <a class="link" href="">Blog</a>
+        <button id="learn">Learn more</button>
+      </div>
+    </nav>
+    <header>
+      <div class="description">
+        Cyber resilience, for the constantly changing cyber industry
+      </div>
+      <div id="buttons-list">
+        <button id="get-started">Get Started</button>
+        <button id="learn-more">Learn more</button>
+      </div>
+    </header>
     <main>
-      <section id="about"></section>
-      <section id="form"></section>
+      <section class="main-content">
+
+        <div id="about" >
+          <div class="title-1">About us</div>
+          <div class="title-2">Who we are</div>
+          <div class="text">
+            Whether you are a small business or a large corporation with crucial
+            infrastructure, Red Fox Labs values your goals by ensuring that your
+            data is always secure and accessible. </br></br> We provide a comprehensive range
+            of services targeted at developing or upgrading your security by
+            adhering to a strict set of guidelines.
+          </div>
+          <button id="more-about-us">More about us</button>
+        </div>
+  
+        <div>
+          <img  src="./assets/Lock.png" alt="Lock" width="500">
+        </div>
+  
+        <div id="services">
+          <div class="title-1">What we offer</div>
+          <div class="title-2">Our Services</div>
+        </div>
+  
+        <div >
+          <img src="./assets/LockB.png" alt="Lockb" width="500">
+        </div>
+  
+        <div id="services-list" >
+          <div class="service">
+            <img src="./assets/bug_report.svg" alt="">
+            <div class="title-3">Penetration Testing</div>
+            <div class="text">We provide penetration testing services to illustrate how an attacker might get unauthorized access to your environment.</div>  
+          </div>
+          <div class="service">
+            <img src="./assets/lock_icon.svg" alt="">
+            <div class="title-3">Audit & Assessment</div>
+            <div class="text">Our team offers a wide range of security auditing services to help you find faults and security gaps in your system.</div>
+          </div>
+          <div class="service">
+            <img src="./assets/group_work.svg" alt="">
+            <div class="title-3">Digital forensics & Incident response</div>
+            <div class="text">Respond to any cyber-attack and take all the necessary measures to identify, contain, patch and recover.</div>
+          </div>
+          <div class="service">
+            <img src="./assets/loop.svg" alt="">
+            <div class="title-3">Cybersecurity training</div>
+            <div class="text">We also provide online training for general employees, developers, and even security specialists who want to better their abilities in cybersecurity areas</div>  
+          </div>
+          <button id="discover">Discover our services</button>
+        </div>
+
+      </section>
+
+
+
+      <section id="form">
+        <div class="title-1">Lets have a chat</div>
+        <div class="title-2">Talk to an expert</div>
+        <div class="text">
+          Our specialists are ready to tailor our security service solutions to fit the needs of your organization.
+        </div>
+        <form >
+          <input class="form-input" type="text" name="name" id="name" placeholder="Name*">
+          <input class="form-input" type="text" name="city" id="city" placeholder="City*">
+          <input class="form-input" type="text" name="email" id="email" placeholder="Email*">
+          <textarea class="form-input" name="message" id="message" cols="30" rows="10" placeholder="Message*"></textarea>
+          <div id="form-checkbox">
+            <input class="form-input" type="checkbox" name="agree" id="agree">
+            <label class="text" for="agree">You agree to the <a href="">Terms of Use</a>  and <a href="">Privacy Policy</a> </label>
+          </div>
+          <input type="submit" value="Submit" id="submit">
+        </form>
+      </section>
     </main>
-    <footer></footer>
+    <footer>®Copyright 2021 | All rights reserved | Ground floor, 71 Lower Baggot Street, Dublin 2, D02 P593, Ireland</footer>
   </body>
 </html>

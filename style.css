@@ -1,0 +1,9 @@
+:root {
+  --red: rgb(242 66 66);
+  --grey: rgb(237 237 237);
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
