@@ -39,12 +39,18 @@ nav {
   margin-bottom: 5rem;
 }
 
-.header-buttons {
+.buttons {
   width: 30rem;
   padding: 1rem;
   color: white;
   border-radius: 0.5rem;
   font-size: 0.9rem;
+}
+
+.red-button {
+  background-color: var(--red);
+  border: solid var(--red);
+  margin-bottom: 1rem;
 }
 
 #get-started {
@@ -68,4 +74,31 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.main-content {
+  padding-top: 1rem;
+  background-color: var(--grey);
+  display: grid;
+  justify-items: center;
+}
+
+.main-content > div {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.text {
+  text-align: center;
+  font-family: 'Amiko', sans-serif;
+}
+
+.title-1 {
+  color: var(--red);
+}
+
+.title-2 {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
