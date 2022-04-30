@@ -47,7 +47,7 @@ nav > div {
     padding-top: 1rem;
     padding: .5rem 1rem 0 1rem;
     scrollbar-color: #ffffff;
-    background-color: #000000;
+    /* background-color: #000000; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -66,6 +66,7 @@ nav > div > a >svg {
 
 button.nav {
     background-color: #000000;
+    cursor: pointer;
     border: 0;
     position: absolute;
     right: 1.2rem;
@@ -82,13 +83,21 @@ button > svg {
 }
 
 .links {
-    display: flex;
     justify-content: center;
     text-align: center;
     background-color: #000000;
     width: 100%;
     margin-left: 0;
 
+}
+
+.linksNotHidden {
+    display: flex;
+
+}
+
+.linksHidden {
+    display: none;
 }
 
 .links ul {
@@ -417,6 +426,7 @@ footer p {
     }
 
     .links {
+        display: flex;
         justify-content: flex-end;
         align-items: flex-start;
 
