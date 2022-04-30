@@ -119,18 +119,26 @@ header {
 }
 
 #contact-us {
+  padding-top: 2rem;
   display: grid;
   justify-items: center;
 }
 
 form {
+  width: 29rem;
   display: grid;
   justify-items: stretch;
   gap: 1rem;
 }
 
+#contact-us .text {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 .form-input {
-  padding: 0.5rem;
+  padding: 0.7rem;
   border: 2px solid black;
   border-radius: 0.5rem;
 }
@@ -147,4 +155,14 @@ label > a {
 #submit {
   width: 10rem;
   justify-self: center;
+}
+
+footer {
+  font-size: 0.9rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
