@@ -1,0 +1,12 @@
+Here are some of the questions that came into my mind while doing this project:
+1. Relative and Static Units > For paddings, margins and so, are we supposed to use only
+relative units so the layout changes depending on the screen size, or is it okay to use
+static units from time to time? I don't know but each time I use static units I feel like
+cheating (for example, I used static measurements for get started button so even when the
+screen size changes, the looking + width/height of the button stays the same). I don't know
+If there's an overall rule or something.
+2. I don't kow if I am doing thing wrong since I am doing a lot of media queries, I feel
+like I have to change the font-size as the screen size goes smaller and stuff? should I
+do a relative font-size or is it normal to change these kind of things manually?
+3. There's something about the button #more-about-us I dunno why applying margin and changing
+its width doesn't work, I tried to figure out why and I just didn't find the reason.

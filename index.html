@@ -4,14 +4,123 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Red Fox Labs clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home | Red Fox Labs clone</title>
+    
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav>
+        <div class="logo-icon-wrapper">
+          <div class="logo-container">
+            <img src="assets/logo.png" alt="logo" class="logo"/>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <ul id="links">
+          <li><a href="#" class="link">About the company</a></li>
+          <li><a href="#" class="link">Services</a></li>
+          <li><a href="#" class="link">Contact</a></li>
+          <li><a href="#" class="link">Blog</a></li>
+          <li><a href="#" class="link" id="learn-more">Learn More</a></li>
+        </ul>
+      </nav>
+      <div class="hero-section">
+        <div class="hero-section-container">
+          <div class="slogan">
+            <p>
+              Cyber resilience, <br> for the constantly <br> changing cyber <br> industry.
+            </p>
+          </div>
+          <div class="buttons">
+            <a href="#" id="get-started" >Get Started</a>
+            <a href="#" id="learn-more-hero">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
-      <section id="about"></section>
-      <section id="form"></section>
+      <section id="about">
+        <div class="first-section">
+          <div class="left">
+            <h2>About us</h2>
+            <h1>Who we are</h1>
+            <p>Whether you are a small business or a large corporation with crucial infrastructure, Red Fox Labs values your goals by ensuring that your data is always secure and accessible.</p>
+            <p>We provide a comprehensive range of services targeted at developing or upgrading your security by adhering to a strict set of guidelines.</p>
+            <a href="#" id="more-about-us">More about us</a>
+          </div>
+          <div class="right">
+            <img src="assets/Lock.png" alt="">
+          </div>
+        </div>
+        <div class="second-section">
+          <div class="left">
+            <h2 id="wwo">What we offer</h2>
+            <h1 id="os">Our services</h1>
+            <img src="assets/Lock.png" alt="">
+          </div>
+          <div class="right">
+            <div class="point">
+              <h1>Penetration Testing</h1>
+              <p>We provide penetration testing services to illustrate how an attacker might get unauthorized access to your environment.</p>
+            </div>
+            <div class="point">
+              <h1>Audit & Assessment</h1>
+              <p>Our team offers a wide range of security auditing services to help you find faults and security gaps in your system.</p>
+            </div>
+            <div class="point">
+              <h1>Digital forensics & Incident response</h1>
+              <p>Respond to any cyber-attack and take all the necessary measures to identify, contain, patch and recover.</p>
+            </div>
+            <div class="point">
+              <h1>Cybersecurity training</h1>
+              <p>We also provide online training for general employees, developers, and even security specialists who want to better their abilities in cybersecurity areas.</p>
+            </div>
+            <a href="#" id="discover-services">Discover our services</a>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section id="form">
+        <h2>Let's have a chat</h2>
+        <h1>Talk to an expert</h1>
+        <p>Our specialists are ready to tailor our security service solutions to fit the needs of your organization.</p>
+        <form action="">
+          <div class="name-city">
+            <input type="text" id="fname" name="fname" value="Name*">
+            <input type="text" id="fcity" name="fcity" value="City*">
+          </div>
+          <div class="email">
+            <input type="text" id="fcity" name="fcity" value="Email*">
+          </div>
+          <div class="text-area">
+            <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Message"></textarea>
+          </div>
+          <div class="agreement-submit">
+            <div class="check-wrapper">
+              <input type="checkbox" id="agreement" name="agreement">
+              <label for="agreement">You agree to the <inline class="check-color">Terms of Use</inline> and <inline class="check-color">Privacy Policy</inline></label>
+            </div>
+            <input type="submit" value="Submit" class="submit-button">
+          </div>
+        </form>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p>®Copyright 2021 | All rights reserved | Ground floor, 71 Lower Baggot Street, Dublin 2, D02 P593, Ireland</p>
+    </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("links");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+        }
+      }
+    </script>
   </body>
 </html>
