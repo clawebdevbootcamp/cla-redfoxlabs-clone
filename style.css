@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+/**** SOME CASUAL STUFF ***/
+:root {
+    --Red: #F24242;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/**** STYLING THE SCROLLBAR ***/
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/**** STYLING THE HEADER ***/
+header {
+    background-image:  url('assets/homeBG.png');
+    background-size: cover;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    color: white;
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    align-items: center;
+    height: 75px;
+    position: fixed;
+    top: 0px;
+    background-color: black;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:10px;
+}
+
+#links li {
+    list-style-type:none;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#links li a {
+    color:white;
+    opacity: 0.9;
+}
+
+#links li a:hover {
+    color: #F24242;
+    transition: all 1s ease;
+}
+
+.logo {
+    color:white;
+    height:50px;
+    width:auto;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    background-color: transparent;
+    margin-top:85px;
+    width:75%;
+}
+
+.hero-section-container {
+    width:60%;
+    display: flex;
+    flex-direction: column;
+}
+.slogan p {
+    font-size: 65px;
+    font-weight: bold;
+    color:white;
+}
+
+#get-started {
+    background-color: #F24242;
+    border-radius: 5px;
+    color:white;
+    padding: 12px 35px;
+    border: solid 2px #F24242;
+}
+
+#learn-more-hero {
+    background-color: transparent;
+    border-radius: 5px;
+    color:white;
+    padding: 12px 35px;
+    border: solid 2px white;
+}
+
+#get-started:hover, #more-about-us:hover, .submit-button:hover  {
+    background-color:transparent;
+    color: #F24242;
+    transition: all 1s ease;
+}
+
+#learn-more-hero:hover {
+    background-color: #F24242;
+    border-color:#F24242;
+    transition: all 1s ease;
+}
+
+#learn-more {
+    background-color: #F24242;
+    border-radius: 5px;
+    color:white;
+    padding: 9px 25px;
+    border: solid 2px #F24242;
+}
+
+#learn-more:hover {
+    background-color: transparent;
+    transition: all 1s ease;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top:50px;
+    margin-bottom:70px;
+    justify-content: flex-start;
+}
+
+.buttons a {
+    margin-right: 30px;
+}
+
+/* Styling About Us section */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDEDED;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width:100%;
+}
+
+.first-section {
+    width:75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first-section .left, .first-section .right, .second-section .left, .second-section .right {
+    width:49%;
+}
+
+.first-section .right, .second-section .left {
+    text-align: center;
+}
+
+.first-section .right img, .second-section .left img  {
+    height:auto;
+    max-width:100%;
+}
+
+.first-section .left h2, #wwo {
+    color: #F24242;
+    font-size: 22px;
+}
+
+.first-section .left h1, #os {
+    font-size: 55px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+#wwo, #os {
+    display: none;
+}
+
+.first-section .left p {
+    line-height: 25px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    text-align: justify;
+}
+
+#more-about-us {
+    background-color: #F24242;
+    border-radius: 5px;
+    color:white;
+    padding: 12px 35px;
+    border: solid 2px #F24242;
+    /*margin: 40px 0px; why not working */
+}
+
+.second-section {
+    padding-top: 40px;
+    width:75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.second-section .point {
+    padding-bottom: 17px;
+}
+
+.second-section .point h1 {
+    padding-bottom: 15px;
+}
+
+.second-section .point p {
+    text-align: justify;
+    line-height: 25px;
+}
+
+#discover-services {
+    color:#F24242;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#discover-services:hover {
+    color:black;
+}
+
+/* Styling the form section */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    width: 75%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#form h2 {
+    color: #F24242;
+}
+
+#form h1 {
+    font-size: 55px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+#form p {
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form div {
+    width: 80%;
+}
+
+/* Styling the footer */
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 45px;
+}
+
+footer p {
+    color: white;
+}
+
+.name-city {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.name-city input {
+    width: 49.5%;
+    height:45px;
+    padding:10px;
+    border: solid 2px black;
+    border-radius: 5px;
+    color:gray;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.email input {
+    width: 49.5%;
+    height:45px;
+    padding:10px;
+    border: solid 2px black;
+    border-radius: 5px;
+    color:gray;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.text-area textarea {
+    padding:10px;
+    width:100%;
+    border: solid 2px black;
+    border-radius: 5px;
+    color:gray;
+    font-size: 15px;
+    margin-bottom: 15px;
+    height: 200px;
+}
+
+.check-color {
+    color:#F24242;
+}
+
+.agreement-submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    background-color: #F24242;
+    border-radius: 5px;
+    color:white;
+    padding: 12px 35px;
+    border: solid 2px #F24242;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 850px) {
+    /* HERO SECTION */
+    .hero-section {
+        margin-top:100px;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-section-container {
+        width:75%;
+        text-align: center;
+    }
+    .slogan p {
+        font-size: 50px;
+    }
+    .buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .buttons a {
+        margin-right: 0px;
+    }
+    
+    #get-started, #learn-more-hero{
+        padding: 12px 35px;
+        width: 70%;
+        margin-bottom: 10px;
+    }
+    
+    .first-section, .second-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .first-section .left, .first-section .right, .second-section .left, .second-section .right {
+        width:100%;
+    }
+
+    .first-section .right, .second-section .left {
+        text-align: center;
+    }
+
+    .first-section .left h1, #os, #form h1  {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    #wwo, #os {
+        display: block;
+        visibility: visible;
+    }
+    .second-section .right .point p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .first-section .right img, .second-section .left img  {
+        height:auto;
+        max-width:90%;
+    }
+
+    #more-about-us {
+        display:inline-block;
+        width: 70%;
+    }
+
+    .name-city {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    
+    .name-city input {
+        width: 49.5%;
+        height:45px;
+        padding:10px;
+        border: solid 2px black;
+        border-radius: 5px;
+        color:gray;
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .email {
+        flex-direction: column;
+    }
+    
+    .email input {
+        width: 100%;
+    }
+  
+    .name-city {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .name-city input {
+        width: 100%;
+    }
+
+    header {
+        background-image:  url('assets/mobileBG.png');
+        background-size: cover;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        background-color: black;
+        position: fixed;
+    }
+
+    .icon {
+        display: block;
+        margin: 10px;
+    }
+
+    .logo-icon-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+    }
+
+    .logo {
+        margin: 10px;
+    }
+
+    #links {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        padding-top: 50px;
+        background-color: black;
+        width: 100%;
+    }
+    
+    #links li {
+        list-style-type:none;
+        font-size: 17px;
+        font-weight: bold;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 40px;
+    }
+
+}
