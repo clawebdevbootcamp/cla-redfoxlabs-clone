@@ -59,6 +59,11 @@ nav {
   margin-bottom: 1rem;
 }
 
+#buttons-list {
+  display: flex;
+  flex-direction: column;
+}
+
 #learn-more {
   background-color: transparent;
   border: 2px solid white;
@@ -165,4 +170,55 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+  #mobile-menu {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .link {
+    color: white;
+    text-decoration: none;
+  }
+
+  #learn {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    width: 10rem;
+  }
+
+  header {
+    padding: 2rem;
+    align-items: flex-start;
+    background-image: url(./assets/homeBG.png);
+  }
+
+  #description {
+    font-size: 4.7rem;
+    line-height: 4rem;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  #buttons-list {
+    display: inline;
+  }
+
+  #get-started,
+  #learn-more {
+    width: 10rem;
+    margin-right: 2rem;
+  }
 }
