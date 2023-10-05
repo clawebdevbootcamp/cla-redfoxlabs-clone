@@ -1,17 +1,11 @@
-# cla-redfoxlabs-clone
+# Redfoxlabs landing page clone 
 
-The project is about cloning an existing web page using HTML5 and CSS3 and following best practices (version control, comments, folder structuring …)
+## 📝 About the project
 
-We made sure to select a web page that covers all the basic concepts that we have seen during last month.
+This is a clone of the redfloxlabs landing page.
 
-Ready to start hacking?
+## 🛠️ Skills needed
 
-1. Fork this repository
-2. Clone it in your local machine
-3. Use your HTML and CSS knowledge to create a clone of this webpage
+Basic HTML and CSS skills are required to complete this project.
 
-**PS1:** You must use git/github to track your advancement
-**PS2:** Your webpage must be responsive
-**PS3:** You don’t have to implement the interactions between the elements
-**PS4:** create a pull request when you finish the project
-**PS4:** Students who can do 90% of the project before tomorrow’s session will get a detailed review from our team.
+**Made with so much 💗 by Dania** 
